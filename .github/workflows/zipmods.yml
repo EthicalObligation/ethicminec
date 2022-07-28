@@ -31,10 +31,14 @@ jobs:
           type: 'zip'
           filename: 'release.zip'
           exclusions: '*.git* /*node_modules/* .editorconfig'
-      - name: Release Action
+          
+      - name: Action Release
         # You may pin to the exact commit or the version.
-        # uses: plutotcool/release@7d38383c66d1d590090108412bda56969c08ae6a
-        uses: plutotcool/release@v2.0.0
+        # uses: yakuhzi/release-asset@f96c41c3fdc53a02ab20a60014725490f91702a3
+        uses: yakuhzi/release-asset@v1.2.3
         with:
-          # GitHub Token used to create the release on GitHub and publish on GitHub registry.
-          github_token: ${{ secrets.YOUR_GITHUB_TOKEN }}
+          # File to upload to the release
+          file: release.zip
+
+
+
