@@ -30,5 +30,4 @@ jobs:
       - uses: ncipollo/release-action@v1
         with:
           artifacts: "release.zip"
-          bodyFile: "body.md"
           token: ${{ secrets.YOUR_GITHUB_TOKEN }}
