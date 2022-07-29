@@ -13,7 +13,7 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v2
-    - run: zip release ./mods/*
+    - run: zip release.zip ./mods/* -j
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "release.zip"
