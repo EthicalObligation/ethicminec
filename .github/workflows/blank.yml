@@ -17,5 +17,5 @@ jobs:
     - run: tar cf serversyncmods.tar ./mods/*
     - uses: ncipollo/release-action@v1
       with:
-        artifacts: "release.zip,serversyncmods.tar"
+        artifacts: "release.zip,serversyncmods.tar.xz"
         token: ${{ secrets.YOUR_GITHUB_TOKEN }}
