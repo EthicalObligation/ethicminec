@@ -18,6 +18,7 @@ jobs:
       with:
         type: 'zip'
         filename: 'release.zip'
+        path: mods
         exclusions: '*.git* /*node_modules/* .editorconfig'
     - uses: ncipollo/release-action@v1
       with:
