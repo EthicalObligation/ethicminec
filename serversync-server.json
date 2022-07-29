@@ -1,0 +1,33 @@
+{
+  "general": {
+    "push_client_mods": false,
+    "sync_mode": 2
+  },
+  "connection": {
+    "port": 38067,
+    "buffer": 65536
+  },
+  "rules": {
+    "directories": [
+      {
+        "path": "mods",
+        "mode": "mirror"
+      }
+    ],
+    "files": {
+      "include": [
+        "mods/**"
+      ],
+      "ignore": [
+        "**/serversync-*.jar",
+        "**/serversync-*.cfg"
+      ],
+      "redirect": [
+
+      ]
+    }
+  },
+  "misc": {
+    "locale": "en_US"
+  }
+}
