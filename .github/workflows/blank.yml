@@ -13,13 +13,7 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v2
-    - name: Archive Release
-      uses: thedoctor0/zip-release@main
-      with:
-        type: 'zip'
-        filename: 'release.zip'
-        path: mods
-        exclusions: '*.git* /*node_modules/* .editorconfig'
+    - run: zip release ./mods/*
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "release.zip"
