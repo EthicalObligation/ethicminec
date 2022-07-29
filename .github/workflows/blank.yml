@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: cd mods; zip release.zip *; mv release.zip ..; cd ..
-    - run: tar caf serversyncmods.tar.xz ./mods/*
+    - run: tar cf serversyncmods.tar ./mods/*
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "release.zip,serversyncmods.tar.xz"
